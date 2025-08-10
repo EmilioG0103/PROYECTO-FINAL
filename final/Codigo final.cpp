@@ -11,7 +11,7 @@ int main() {
     cout << "Altura minima con 9 nodos y max 2 hijos: "
          << MinimaAlturaDeArbol(9, 2) << endl;
 
-    // Crear árbol binario usando BinarySearchTree
+    // Crea árbol binario usando BinarySearchTree
     BinarySearchTree<int> arbol;
     arbol.Add(5);
     arbol.Add(3);
@@ -24,9 +24,9 @@ int main() {
     cout << "Busqueda de 7: " << (arbol.SearchWithRecursive(7) ? "Encontrado" : "No encontrado") << endl;
 
     cout << "Post-order iterativo: ";
-    arbol.PostOrderIterativo();  // Asegúrate de implementar esta función iterativa en tu .cpp
+    arbol.PostOrderIterativo();  
 
-    // Crear HashSet que hereda de HashTableChaining
+    // HashSet que hereda de HashTableChaining
     HashSet<int> conjunto(5);
     conjunto.Add(10);
     conjunto.Add(20);
@@ -36,3 +36,4 @@ int main() {
 
     return 0;
 }
+
