@@ -1,13 +1,17 @@
-#include "BinarySearchTree.h"
-
-double log_base_n(double x, double base)
+// Corregir el error del insert
+template <typename T>
+void BinarySearchTree<T>::Insert(Node*& node, T data)
 {
-	return std::log(x) / std::log(base);
-}
-
-int MinimaAlturaDeArbol(int numeroDeNodos, int maximoDeHijosPorNodo)
-{
-	int maximoDeHijosMenos1PorNumeroDeNodosMasUno = ((maximoDeHijosPorNodo - 1) * numeroDeNodos + 1);
-	int altura = ceil(log_base_n(maximoDeHijosMenos1PorNumeroDeNodosMasUno, maximoDeHijosPorNodo)) - 1;
-	return altura;
+    if (node == nullptr)
+    {
+        node = new Node{ data, nullptr, nullptr };
+    }
+    else
+    {
+        if (data < node->data)
+            Insert(node->left, data);
+        else if (data > node->data)
+            Insert(node->right, data);
+        // Si data == node->data, no se inserta para evitar duplicados
+    }
 }
