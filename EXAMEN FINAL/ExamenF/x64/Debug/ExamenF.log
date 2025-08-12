@@ -1,0 +1,29 @@
+﻿  ExamenF.cpp
+C:\Users\emxrl\source\repos\ExamenF\HashTableChaining.h(53,27): warning C4018: '<': no coinciden signed/unsigned
+  (compilando archivo de origen "ExamenF.cpp")
+      C:\Users\emxrl\source\repos\ExamenF\HashTableChaining.h(53,27):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          C:\Users\emxrl\source\repos\ExamenF\ExamenF.cpp(28,18):
+          Vea la referencia a la creación de una instancia de clase plantilla "HashSet<int>" que se está compilando
+          C:\Users\emxrl\source\repos\ExamenF\HashTableChaining.h(63,24):
+          Vea la referencia a la creación de una instancia de clase plantilla "HashTableChaining<T>" que se está compilando
+          with
+          [
+              T=int
+          ]
+          C:\Users\emxrl\source\repos\ExamenF\HashTableChaining.h(52,10):
+          al compilar la función del miembro clase plantilla "void HashTableChaining<T>::Print(void)"
+          with
+          [
+              T=int
+          ]
+              C:\Users\emxrl\source\repos\ExamenF\ExamenF.cpp(32,19):
+              vea la primera referencia a “HashTableChaining<T>::Print” en “main”
+          with
+          [
+              T=int
+          ]
+  
+  BinarySearchTree.cpp
+  Generando código...
+  ExamenF.vcxproj -> C:\Users\emxrl\source\repos\ExamenF\x64\Debug\ExamenF.exe
