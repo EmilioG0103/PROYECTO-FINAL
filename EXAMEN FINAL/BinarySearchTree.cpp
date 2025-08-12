@@ -6,13 +6,13 @@ BinarySearchTree<T>::BinarySearchTree() {
     root = nullptr;
 }
 
-// Corregido Ejercicio 1: permite duplicados, pero van a la izquierda
+// Ejercicio 1 corregido
 template <typename T>
 TreeNode<T>* BinarySearchTree<T>::AddRecursive(TreeNode<T>* node, T data) {
     if (node == nullptr) {
         return new TreeNode<T>(data);
     }
-    if (data <= node->data) { // <= para que duplicados vayan a la izquierda
+    if (data <= node->data) { 
         node->left = AddRecursive(node->left, data);
     }
     else {
@@ -42,7 +42,7 @@ void BinarySearchTree<T>::InOrder() {
     cout << endl;
 }
 
-// Búsqueda iterativa
+// BÃºsqueda iterativa
 template <typename T>
 bool BinarySearchTree<T>::Search(T data) {
     TreeNode<T>* actual = root;
@@ -82,3 +82,4 @@ void BinarySearchTree<T>::PostOrderIterativo() {
 }
 
 template class BinarySearchTree<int>;
+
