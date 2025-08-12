@@ -1,0 +1,17 @@
+﻿  FINAL.cpp
+  BinarySearchTree.cpp
+C:\Users\emxrl\source\repos\FINAL\BinarySearchTree.cpp(13,16): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+  HashTableChaining.cpp
+C:\Users\emxrl\source\repos\FINAL\HashTableChaining.h(62,27): warning C4018: '<': no coinciden signed/unsigned
+  (compilando archivo de origen "HashTableChaining.cpp")
+      C:\Users\emxrl\source\repos\FINAL\HashTableChaining.h(62,27):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          C:\Users\emxrl\source\repos\FINAL\HashTableChaining.cpp(6,28):
+          Vea la referencia a la creación de una instancia de clase plantilla "HashTableChaining<int>" que se está compilando
+          C:\Users\emxrl\source\repos\FINAL\HashTableChaining.h(60,10):
+          al compilar la función del miembro clase plantilla "void HashTableChaining<int>::Print(void)"
+              C:\Users\emxrl\source\repos\FINAL\HashTableChaining.cpp(13,30):
+              vea la primera referencia a “HashTableChaining<int>::Print” en “HashTableChainingExample”
+  
+  Generando código...
+  FINAL.vcxproj -> C:\Users\emxrl\source\repos\FINAL\x64\Debug\FINAL.exe
