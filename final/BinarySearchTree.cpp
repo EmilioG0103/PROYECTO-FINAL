@@ -1,4 +1,4 @@
-// Corregir el error del insert
+// agora si ya corregido bien
 template <typename T>
 void BinarySearchTree<T>::Insert(Node*& node, T data)
 {
@@ -8,10 +8,9 @@ void BinarySearchTree<T>::Insert(Node*& node, T data)
     }
     else
     {
-        if (data < node->data)
+        if (data <= node->data) 
             Insert(node->left, data);
-        else if (data > node->data)
+        else
             Insert(node->right, data);
-        // Si data == node->data, no se inserta para evitar duplicados
     }
 }
